@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jossy-Femto Limited - Engineering & Construction Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #000000 100%);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .project-table tr:nth-child(even) {
+            background-color: #fef9c3;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-black text-yellow-400 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center">
+                        <span class="text-2xl font-bold">JOSSY-FEMTO</span>
+                        <span class="text-xs ml-1">LIMITED</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-yellow-300 transition">Home</a>
+                    <a href="#about" class="hover:text-yellow-300 transition">About</a>
+                    <a href="#services" class="hover:text-yellow-300 transition">Services</a>
+                    <a href="#projects" class="hover:text-yellow-300 transition">Projects</a>
+                    <a href="#contact" class="hover:text-yellow-300 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <i data-feather="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-black px-6 py-3">
+            <a href="#home" class="block py-2 hover:text-yellow-300">Home</a>
+            <a href="#about" class="block py-2 hover:text-yellow-300">About</a>
+            <a href="#services" class="block py-2 hover:text-yellow-300">Services</a>
+            <a href="#projects" class="block py-2 hover:text-yellow-300">Projects</a>
+            <a href="#contact" class="block py-2 hover:text-yellow-300">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Engineering Excellence <br> Built to Last</h1>
+                    <p class="text-xl mb-8">Providing turnkey solutions in design, construction, and project management
+                        with international standards.</p>
+                    <a href="#contact"
+                        class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition duration-300 inline-block">Get
+                        in Touch</a>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <img src="http://static.photos/construction/1200x630/5" alt="Construction Site"
+                        class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4" data-aos="fade-up">About Jossy-Femto Limited
+                </h2>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mb-6"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/office/640x360/10" alt="Company Office" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-black mb-4">Our Company</h3>
+                    <p class="text-gray-700 mb-6">Jossy-Femto Limited was incorporated as a Limited Liability company
+                        under the company and allied matters decree to provide Turnkey Services in the Design, Building,
+                        and Construction Engineering, Project Management, and Supply Chain Management.</p>
+
+                    <div class="mb-8">
+                        <h4 class="text-xl font-bold text-black mb-3">Our Mission</h4>
+                        <p class="text-gray-700">Our primary mission is to elevate the quality of services in Nigeria to
+                            standards obtainable in more developed countries by applying high standards and fresh ideas
+                            to improve the industry.</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-bold text-black mb-3">Our Vision</h4>
+                        <p class="text-gray-700">We aim to project a formidable team capable of leading our foreign
+                            contemporaries in service deliveries both at present and in the future.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-yellow-50 p-8 rounded-lg shadow-md" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-black mb-6 text-center">Management Team</h3>
+                <p class="text-gray-700 text-center">The company is run by dynamic professionals who have served in
+                    various capacities in both public and private sectors. The staff strength includes qualified
+                    engineers, Quantity Surveyors, Cost Control Analysts, Project Managers, and Builders with over 35
+                    years' experience in infrastructure development and management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4" data-aos="fade-up">Our Services</h2>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto" data-aos="fade-up">We offer comprehensive solutions tailored
+                    to meet your project needs with excellence and precision.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Training Services -->
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="text-yellow-400 mb-4">
+                        <i data-feather="book-open" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">Training Services</h3>
+                    <p class="text-gray-700">We offer comprehensive training programs tailored to enhance skills in
+                        engineering, project management, and construction. Our courses are designed by experts with
+                        extensive industry experience, ensuring practical knowledge for career growth and efficiency.
+                    </p>
+                </div>
+
+                <!-- Full Turnkey Solutions -->
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="text-yellow-400 mb-4">
+                        <i data-feather="layers" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">Full Turnkey Solutions</h3>
+                    <p class="text-gray-700">We provide end-to-end project solutions from design to completion, managing
+                        every phase including planning, execution, and handover. This ensures seamless delivery, meeting
+                        client specifications with high-quality standards and timely completion.</p>
+                </div>
+
+                <!-- Construction -->
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="text-yellow-400 mb-4">
+                        <i data-feather="tool" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">Construction</h3>
+                    <p class="text-gray-700">Our construction services cover residential, commercial, and industrial
+                        projects. With a skilled workforce and advanced techniques, we deliver durable structures that
+                        adhere to international safety and quality standards, tailored to client needs.</p>
+                </div>
+
+                <!-- Procurement -->
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="text-yellow-400 mb-4">
+                        <i data-feather="shopping-cart" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">Procurement</h3>
+                    <p class="text-gray-700">We manage the acquisition of materials and equipment, ensuring
+                        cost-effectiveness and quality. Our procurement process involves sourcing from reliable
+                        suppliers, negotiating contracts, and delivering materials on time to support project timelines.
+                    </p>
+                </div>
+
+                <!-- IT Equipment -->
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="text-yellow-400 mb-4">
+                        <i data-feather="cpu" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">IT Equipment</h3>
+                    <p class="text-gray-700">We supply a range of IT hardware including computers, servers, and
+                        networking devices. Our products are sourced from leading manufacturers, ensuring reliability
+                        and performance for businesses seeking to upgrade their technological infrastructure.</p>
+                </div>
+
+                <!-- Supply and Maintenance -->
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="text-yellow-400 mb-4">
+                        <i data-feather="settings" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">Supply and Maintenance</h3>
+                    <p class="text-gray-700">We provide ongoing supply of construction materials and equipment, paired
+                        with maintenance services. Our team ensures regular upkeep and repairs, extending the lifespan
+                        of assets and maintaining optimal operational efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4" data-aos="fade-up">Our Projects</h2>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto" data-aos="fade-up">A showcase of our completed projects and
+                    ongoing engagements with various government agencies and private organizations.</p>
+            </div>
+
+            <div class="overflow-x-auto" data-aos="fade-up">
+                <table class="min-w-full project-table">
+                    <thead class="bg-black text-yellow-400">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Year</th>
+                            <th class="py-3 px-4 text-left">Name of Works</th>
+                            <th class="py-3 px-4 text-left">Name of Employer</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700">
+                        <tr>
+                            <td class="py-3 px-4 border-b">2024</td>
+                            <td class="py-3 px-4 border-b">Supply and Installation of Solar Powered Street Light in
+                                Various Locations Within Waziri Ibrahim Estate Maiduguri Road, Damaturu Zone II, Yobe
+                                State</td>
+                            <td class="py-3 px-4 border-b">Federal Ministry of Power</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 border-b">2024</td>
+                            <td class="py-3 px-4 border-b">Supply and Installation of Solar Powered Street Lights in
+                                Waziri Ibrahim Estate, Maiduguri Road, Damaturu, Kaigama Road, Damboa, Potiskum Yobe
+                                State.</td>
+                            <td class="py-3 px-4 border-b">Federal Ministry of Power</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 border-b">2024</td>
+                            <td class="py-3 px-4 border-b">1Nr Toyota Prado & 1Nr Toyota Camry 2024 Mode</td>
+                            <td class="py-3 px-4 border-b">Nigerian Police Force</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 border-b">2024</td>
+                            <td class="py-3 px-4 border-b">Supply of 1 Unit of Toyota Landcruiser Prado V6 Jeep</td>
+                            <td class="py-3 px-4 border-b">Nigerian Police Force</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 border-b">2024</td>
+                            <td class="py-3 px-4 border-b">Consultancy Services for Capacity Building for Security
+                                Personnel and Task Force on Accessibility and Discrimination Response at the National
+                                Commission for Persons with Disabilities, Abuja</td>
+                            <td class="py-3 px-4 border-b">National Commission for Persons with Disabilities</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div class="text-center mt-10">
+                    <a href="/projects.html"
+                        class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition duration-300 inline-block">View
+                        All Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4" data-aos="fade-up">Contact Us</h2>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto" data-aos="fade-up">Get in touch with our team for inquiries,
+                    project discussions, or partnership opportunities.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-2xl font-bold text-black mb-6">Contact Information</h3>
+
+                        <div class="flex items-start mb-6">
+                            <div class="text-yellow-400 mr-4 mt-1">
+                                <i data-feather="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-black mb-1">Address</h4>
+                                <p class="text-gray-700">Plot 1234, Construction Avenue, Central Business District,
+                                    Abuja, Nigeria</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start mb-6">
+                            <div class="text-yellow-400 mr-4 mt-1">
+                                <i data-feather="phone" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-black mb-1">Phone</h4>
+                                <p class="text-gray-700">+234 812 345 6789</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start mb-6">
+                            <div class="text-yellow-400 mr-4 mt-1">
+                                <i data-feather="mail" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-black mb-1">Email</h4>
+                                <p class="text-gray-700">info@jossyfemto.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="text-yellow-400 mr-4 mt-1">
+                                <i data-feather="clock" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-black mb-1">Working Hours</h4>
+                                <p class="text-gray-700">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                <p class="text-gray-700">Saturday: 9:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 md:pl-10" data-aos="fade-left">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-black mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                                <input type="text" id="subject"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea id="message" rows="5"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition duration-300 w-full">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-4">JOSSY-FEMTO LIMITED</h3>
+                    <p class="text-gray-400 mb-4">Engineering excellence and construction solutions with international
+                        standards.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-400 transition">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-bold text-yellow-400 mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-yellow-400 transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-yellow-400 transition">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-yellow-400 transition">Services</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-yellow-400 transition">Projects</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-yellow-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-yellow-400 mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition">Training Services</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition">Turnkey Solutions</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition">Construction</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition">Procurement</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-400 transition">IT Equipment</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 Jossy-Femto Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home"
+        class="fixed bottom-6 right-6 bg-yellow-400 text-black p-3 rounded-full shadow-lg hover:bg-yellow-500 transition duration-300"
+        id="back-to-top">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </a>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Show/hide back to top button
+        window.addEventListener('scroll', () => {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+
+        // Replace feather icons
+        feather.replace();
+    </script>
+</body>
+
+</html>
